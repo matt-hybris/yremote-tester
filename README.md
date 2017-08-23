@@ -34,7 +34,6 @@ Or who knows, maybe one day I'll be bored and make one for Eclipse too :)
 This is the basic API:
 
 <pre>
-<code>
 interface TestRunner {
     /**
      * Runs tests data on a default configured server.
@@ -43,7 +42,6 @@ interface TestRunner {
      */
     TestRunResult runTests(TestRunData testRunData)
 }
-<code>
 </pre>
 
 I will probably extend this to one that takes a server configuration as a parameter, although I'm not sure if it's 
