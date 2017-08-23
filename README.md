@@ -1,10 +1,10 @@
-#yremote-tester
+# yremote-tester
 
 Simple utility project that runs tests on a running hybris server. 
 
 Written entirely in Groovy. 
 
-##Why?
+## Why?
 
 I'm a strong supporter of TDD and unit testing in general. Even if you're not doing pure TDD, 
 (which I don't do all the time), it's still important to have good test coverage. 
