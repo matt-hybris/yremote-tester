@@ -1,0 +1,308 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>hybris testweb console | Test results</title>
+    <link rel="stylesheet" href="/test/static/css/blueprint/screen.css;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A" type="text/css"
+          media="screen, projection"/>
+    <link rel="stylesheet" href="/test/static/css/blueprint/print.css;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A" type="text/css"
+          media="screen, projection"/>
+    <link rel="stylesheet" href="/test/static/css/blueprint/ie.css;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A" type="text/css"
+          media="screen, projection"/>
+    <link rel="stylesheet" href="/test/static/css/jquery-ui/jquery-ui.css;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A" type="text/css"
+          media="screen, projection"/>
+    <link rel="stylesheet" href="/test/static/css/table.css;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/test/static/css/main.css;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A" type="text/css" media="screen, projection"/>
+    <link rel="stylesheet" href="/test/static/css/style.css;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A" type="text/css" media="screen, projection"/>
+
+    <script type="text/javascript" src="/test/static/js/jquery-2.0.2.min.js;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A"></script>
+    <script type="text/javascript" src="/test/static/js/jquery-ui.js;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A"></script>
+    <script type="text/javascript" src="/test/static/js/ba-debug.min.js;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A"></script>
+    <script type="text/javascript" src="/test/static/js/main.js;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A"></script>
+    <script type="text/javascript" src="/test/static/js/jquery.dataTables.min.js;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A"></script>
+
+
+
+</head>
+<body>
+<div id="mainContainer" class="container" data-expandIconUrl="/test/static/img/expand-small-silver.png;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A"
+     data-collapseIconUrl="/test/static/img/collapse-small-silver.png;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A">
+
+    <div class="span-24" id="content">
+        <div id="test-results">
+            <table id="test-results-table">
+                <thead>
+                <tr>
+                    <th colspan="4">JUnit Test Results</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>Test suite</th>
+                    <th>Overall time</th>
+                    <th>Result</th>
+                </tr>
+                </thead>
+                <tbody>
+
+
+
+
+
+
+
+                <tr>
+                    <td><img src="/test/static/img/expand-small-silver.png;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A"
+                             class="toggleTestCases"
+                             data-testCasesClass="LifestyleAttributeTest_testCases"/></td>
+                    <td>
+                        <a class="re-run-test"
+                           title="re-run test suite"
+                           href="/test/run/testsuites;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A?testSuites=dummy.test.facades.LifestyleAttributeTest">
+                            dummy.test.facades.LifestyleAttributeTest
+                        </a>
+                    </td>
+                    <td>0 m 0 s 00 ms
+                    </td>
+                    <td><img src="/test/static/img/cross.png" alt="false" class="overallResult" />
+                    </td>
+                </tr>
+
+                <tr class="LifestyleAttributeTest_testCases testCasesContainer">
+                    <td colspan="2">
+
+                        <a class="re-run-test"
+                           title="re-run test case"
+                           href="/test/run/testscases;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A?testSuite=dummy.test.facades.LifestyleAttributeTest&testCaseName=check+lifestyle+for+cart%5B0%5D%28dummy.test.facades.LifestyleAttributeTest%29">
+                            check lifestyle for cart[0]
+                        </a>
+                    </td>
+                    <td>0 m 0 s 00 ms
+                    </td>
+                    <td data-error="check lifestyle for cart[0](dummy.test.facades.LifestyleAttributeTest): No registered attribute handler for attribute 'itemFreeDelivery'. Check your Spring configuration."
+                        data-stackTrace="de.hybris.platform.servicelayer.exceptions.SystemException: No registered attribute handler for attribute 'itemFreeDelivery'. Check your Spring configuration.
+	at de.hybris.platform.servicelayer.internal.model.attribute.impl.DefaultDynamicAttributesProvider.get(DefaultDynamicAttributesProvider.java:52)
+	at de.hybris.platform.servicelayer.model.ItemModelContextImpl.getDynamicValue(ItemModelContextImpl.java:283)
+	at de.hybris.platform.core.model.product.ProductModel.getItemFreeDelivery(ProductModel.java:1291)
+	at dummy.facades.populators.CartDataToJsonDataPopulator.lambda$6(CartDataToJsonDataPopulator.java:357)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at dummy.facades.populators.CartDataToJsonDataPopulator.convertAllFreeDeliveryItems(CartDataToJsonDataPopulator.java:357)
+	at dummy.facades.populators.CartDataToJsonDataPopulator.populate(CartDataToJsonDataPopulator.java:107)
+	at dummy.facades.populators.CartDataToJsonDataPopulator.populate(CartDataToJsonDataPopulator.java:1)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.hybris.dtocache.populator.PopulatorCacheAspect.cachePopulate(PopulatorCacheAspect.java:95)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:68)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at de.hybris.platform.converters.impl.AbstractPopulatingConverter.populate(AbstractPopulatingConverter.java:61)
+	at de.hybris.platform.commerceservices.converter.impl.AbstractPopulatingConverter.convert(AbstractPopulatingConverter.java:40)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at de.hybris.platform.commercefacades.order.impl.DefaultCartFacade.getSessionCart(DefaultCartFacade.java:87)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at dummy.test.facades.LifestyleAttributeTest.check lifestyle for cart_closure1(LifestyleAttributeTest.groovy:41)
+	at dummy.test.facades.LifestyleAttributeTest.check lifestyle for cart_closure1(LifestyleAttributeTest.groovy)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at de.hybris.platform.commerceservices.impersonation.impl.DefaultImpersonationService$1.execute(DefaultImpersonationService.java:82)
+	at de.hybris.platform.servicelayer.session.impl.DefaultSessionService.executeInLocalView(DefaultSessionService.java:91)
+	at de.hybris.platform.commerceservices.impersonation.impl.DefaultImpersonationService.executeInContext(DefaultImpersonationService.java:72)
+	at dummy.test.facades.LifestyleAttributeTest.check lifestyle for cart(LifestyleAttributeTest.groovy:39)
+">
+
+
+
+
+                        <img src="/test/static/img/cross.png" alt="false" class="testCaseIcon_false" />
+
+
+
+                    </td>
+                </tr>
+
+                <tr class="LifestyleAttributeTest_testCases testCasesContainer">
+                    <td colspan="2">
+
+                        <a class="re-run-test"
+                           title="re-run test case"
+                           href="/test/run/testscases;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A?testSuite=dummy.test.facades.LifestyleAttributeTest&testCaseName=check+lifestyle+for+cart%5B1%5D%28dummy.test.facades.LifestyleAttributeTest%29">
+                            check lifestyle for cart[1]
+                        </a>
+                    </td>
+                    <td>0 m 0 s 00 ms
+                    </td>
+                    <td data-error="check lifestyle for cart[1](dummy.test.facades.LifestyleAttributeTest): No registered attribute handler for attribute 'itemFreeDelivery'. Check your Spring configuration."
+                        data-stackTrace="de.hybris.platform.servicelayer.exceptions.SystemException: No registered attribute handler for attribute 'itemFreeDelivery'. Check your Spring configuration.
+	at de.hybris.platform.servicelayer.internal.model.attribute.impl.DefaultDynamicAttributesProvider.get(DefaultDynamicAttributesProvider.java:52)
+	at de.hybris.platform.servicelayer.model.ItemModelContextImpl.getDynamicValue(ItemModelContextImpl.java:283)
+	at de.hybris.platform.core.model.product.ProductModel.getItemFreeDelivery(ProductModel.java:1291)
+	at dummy.facades.populators.CartDataToJsonDataPopulator.lambda$6(CartDataToJsonDataPopulator.java:357)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at dummy.facades.populators.CartDataToJsonDataPopulator.convertAllFreeDeliveryItems(CartDataToJsonDataPopulator.java:357)
+	at dummy.facades.populators.CartDataToJsonDataPopulator.populate(CartDataToJsonDataPopulator.java:107)
+	at dummy.facades.populators.CartDataToJsonDataPopulator.populate(CartDataToJsonDataPopulator.java:1)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.hybris.dtocache.populator.PopulatorCacheAspect.cachePopulate(PopulatorCacheAspect.java:95)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:68)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at de.hybris.platform.converters.impl.AbstractPopulatingConverter.populate(AbstractPopulatingConverter.java:61)
+	at de.hybris.platform.commerceservices.converter.impl.AbstractPopulatingConverter.convert(AbstractPopulatingConverter.java:40)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at de.hybris.platform.commercefacades.order.impl.DefaultCartFacade.getSessionCart(DefaultCartFacade.java:87)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at dummy.test.facades.LifestyleAttributeTest.check lifestyle for cart_closure1(LifestyleAttributeTest.groovy:41)
+	at dummy.test.facades.LifestyleAttributeTest.check lifestyle for cart_closure1(LifestyleAttributeTest.groovy)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at de.hybris.platform.commerceservices.impersonation.impl.DefaultImpersonationService$1.execute(DefaultImpersonationService.java:82)
+	at de.hybris.platform.servicelayer.session.impl.DefaultSessionService.executeInLocalView(DefaultSessionService.java:91)
+	at de.hybris.platform.commerceservices.impersonation.impl.DefaultImpersonationService.executeInContext(DefaultImpersonationService.java:72)
+	at dummy.test.facades.LifestyleAttributeTest.check lifestyle for cart(LifestyleAttributeTest.groovy:39)
+">
+
+
+
+
+                        <img src="/test/static/img/cross.png" alt="false" class="testCaseIcon_false" />
+
+
+
+                    </td>
+                </tr>
+
+                <tr class="LifestyleAttributeTest_testCases testCasesContainer">
+                    <td colspan="2">
+
+                        <a class="re-run-test"
+                           title="re-run test case"
+                           href="/test/run/testscases;jsessionid=E0B5FD71F0EE917A8F629DE3CC538B5A?testSuite=dummy.test.facades.LifestyleAttributeTest&testCaseName=check+lifestyle+for+cart%5B2%5D%28dummy.test.facades.LifestyleAttributeTest%29">
+                            check lifestyle for cart[2]
+                        </a>
+                    </td>
+                    <td>0 m 0 s 00 ms
+                    </td>
+                    <td data-error="check lifestyle for cart[2](dummy.test.facades.LifestyleAttributeTest): No registered attribute handler for attribute 'itemFreeDelivery'. Check your Spring configuration."
+                        data-stackTrace="de.hybris.platform.servicelayer.exceptions.SystemException: No registered attribute handler for attribute 'itemFreeDelivery'. Check your Spring configuration.
+	at de.hybris.platform.servicelayer.internal.model.attribute.impl.DefaultDynamicAttributesProvider.get(DefaultDynamicAttributesProvider.java:52)
+	at de.hybris.platform.servicelayer.model.ItemModelContextImpl.getDynamicValue(ItemModelContextImpl.java:283)
+	at de.hybris.platform.core.model.product.ProductModel.getItemFreeDelivery(ProductModel.java:1291)
+	at dummy.facades.populators.CartDataToJsonDataPopulator.lambda$6(CartDataToJsonDataPopulator.java:357)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at dummy.facades.populators.CartDataToJsonDataPopulator.convertAllFreeDeliveryItems(CartDataToJsonDataPopulator.java:357)
+	at dummy.facades.populators.CartDataToJsonDataPopulator.populate(CartDataToJsonDataPopulator.java:107)
+	at dummy.facades.populators.CartDataToJsonDataPopulator.populate(CartDataToJsonDataPopulator.java:1)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.hybris.dtocache.populator.PopulatorCacheAspect.cachePopulate(PopulatorCacheAspect.java:95)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:68)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at de.hybris.platform.converters.impl.AbstractPopulatingConverter.populate(AbstractPopulatingConverter.java:61)
+	at de.hybris.platform.commerceservices.converter.impl.AbstractPopulatingConverter.convert(AbstractPopulatingConverter.java:40)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at de.hybris.platform.commercefacades.order.impl.DefaultCartFacade.getSessionCart(DefaultCartFacade.java:87)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:717)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at dummy.test.facades.LifestyleAttributeTest.check lifestyle for cart_closure1(LifestyleAttributeTest.groovy:41)
+	at dummy.test.facades.LifestyleAttributeTest.check lifestyle for cart_closure1(LifestyleAttributeTest.groovy)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at de.hybris.platform.commerceservices.impersonation.impl.DefaultImpersonationService$1.execute(DefaultImpersonationService.java:82)
+	at de.hybris.platform.servicelayer.session.impl.DefaultSessionService.executeInLocalView(DefaultSessionService.java:91)
+	at de.hybris.platform.commerceservices.impersonation.impl.DefaultImpersonationService.executeInContext(DefaultImpersonationService.java:72)
+	at dummy.test.facades.LifestyleAttributeTest.check lifestyle for cart(LifestyleAttributeTest.groovy:39)
+">
+
+
+
+
+                        <img src="/test/static/img/cross.png" alt="false" class="testCaseIcon_false" />
+
+
+
+                    </td>
+                </tr>
+
+
+
+                </tbody>
+            </table>
+
+            <span id="overallResult" data-result="false"></span>
+
+            <div id="errorsContainer"></div>
+        </div>
+    </div>
+
+</div>
+<footer>
+    &copy; hybris AG, 2015
+</footer>
+</body>
+</html>
