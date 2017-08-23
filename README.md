@@ -1,10 +1,10 @@
-#yremote-tester
+# yremote-tester
 
 Simple utility project that runs tests on a running hybris server. 
 
 Written entirely in Groovy. 
 
-##Why?
+## Why?
 
 I'm a strong supporter of TDD and unit testing in general. Even if you're not doing pure TDD, 
 (which I don't do all the time), it's still important to have good test coverage. 
@@ -34,7 +34,6 @@ Or who knows, maybe one day I'll be bored and make one for Eclipse too :)
 This is the basic API:
 
 <pre>
-<code>
 interface TestRunner {
     /**
      * Runs tests data on a default configured server.
@@ -43,7 +42,6 @@ interface TestRunner {
      */
     TestRunResult runTests(TestRunData testRunData)
 }
-<code>
 </pre>
 
 I will probably extend this to one that takes a server configuration as a parameter, although I'm not sure if it's 
