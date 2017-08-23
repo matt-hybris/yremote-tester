@@ -5,7 +5,7 @@ import com.roznet.ytester.data.TestRunData
 import com.roznet.ytester.data.TestSuiteData
 import spock.lang.Unroll
 
-class BasicTest extends BaseTest {
+class UrlBuilderTests extends BaseTest {
 
     def "test suite only"() {
         setup:
